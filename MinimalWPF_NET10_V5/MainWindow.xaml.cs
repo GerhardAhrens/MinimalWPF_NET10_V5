@@ -49,7 +49,7 @@ namespace MinimalWPF
 
         private void OnLoaded(object sender, RoutedEventArgs e)
         {
-            StatusbarMain.Statusbar.CurrentDatabase = "Keine";
+            StatusbarMain.Statusbar.DatabaseInfo = "Keine";
             StatusbarMain.Statusbar.DatabaseInfoTooltip = "Keine Datenbank verbunden";
             StatusbarMain.Statusbar.Notification = "Bereit";
         }

@@ -61,13 +61,13 @@ namespace System.Windows
             }
         }
 
-        private string currentDatabase = string.Empty;
-        public string CurrentDatabase
+        private string databaseInfo = string.Empty;
+        public string DatabaseInfo
         {
-            get { return this.currentDatabase; }
+            get { return this.databaseInfo; }
             set
             {
-                this.currentDatabase = value;
+                this.databaseInfo = value;
                 this.OnPropertyChanged();
             }
         }
@@ -94,6 +94,7 @@ namespace System.Windows
             }
         }
 
+        /*
         public void SetNotification(string notification = null)
         {
             if (string.IsNullOrEmpty(notification) == true)
@@ -105,6 +106,19 @@ namespace System.Windows
                 this.Notification = notification;
             }
         }
+
+        public void SetDatabaseInfo(string notification = null)
+        {
+            if (string.IsNullOrEmpty(notification) == true)
+            {
+                this.DatabaseInfo = string.Empty;
+            }
+            else
+            {
+                this.DatabaseInfo = notification;
+            }
+        }
+        */
 
         public event PropertyChangedEventHandler PropertyChanged;
 
